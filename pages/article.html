@@ -24,22 +24,63 @@
             </li>
         </ul>
         <ul class="navDroite">
-            <li><a id="panierButton" href="panier.html">Panier</a></li>
-            <li><a id="loginButton" href="login.html">Log In</a></li>
+            <li><a href="panier.html">Panier</a></li>
+            <li><a href="login.html">Log In</a></li>
         </ul>
     </div>
 
     <h1>Article</h1>
+    
+    <div class="box1">
+    <div><img src="https://th.bing.com/th/id/OIP.KXogHNeHoUFZp5Fi_qdQ_QHaHN?pid=ImgDet&rs=1"></div>
 
-    <img src="https://th.bing.com/th/id/OIP.KXogHNeHoUFZp5Fi_qdQ_QHaHN?pid=ImgDet&rs=1">
-
-
-
+    <script>
+        function increaseCount(a, b) {
+            var input = b.previousElementSibling;
+            var value = parseInt(input.value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            input.value = value;
+          }
+    
+          
+          function decreaseCount(a, b) {
+            var input = b.nextElementSibling;
+            var value = parseInt(input.value, 10);
+            if (value > 1) {
+              value = isNaN(value) ? 0 : value;
+              value--;
+              input.value = value;
+            }
+          }
+        </script>
+    <div>
+        <div class="counter">
+            <span class="down" onClick='decreaseCount(event, this)'>-</span>
+            <input type="text" value="1">
+            <span class="up" onClick='increaseCount(event, this)'>+</span>
+          </div>
+        </div>
+        </div>
     <button>
+        <div class="boutons">
         <span class="box">
-            Hover!
+            Ajouter au panier
         </span>
     </button>
+    <button>
+        <span class="box">
+            Acheter
+        </span>
+    </button>
+</div>
+
+
+
+
+
+
+
     <footer>
         <p>Page réalisée par Natan<p>
     </footer>
