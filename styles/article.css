@@ -1,11 +1,12 @@
 .nav {
     background-color: black;
-    color: #fff;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     padding: 1.5%;
     font-size: 150%;
-    margin-top: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 /* Barre de nav gauche */
@@ -44,8 +45,8 @@
   
 
 body{
-    color:red;
-    background-color: grey;
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 footer{
@@ -63,9 +64,12 @@ footer{
 }
 
 /* Bouton */
-
+.boutons{
+   
+}
 .box {
     width: 140px;
+    display: flex;
     height: auto;
     float: left;
     transition: .5s linear;
@@ -74,10 +78,10 @@ footer{
     overflow: hidden;
     padding: 15px;
     text-align: center;
-    margin: 0 5px;
     background: rgb(0, 0, 0);
     text-transform: uppercase;
     font-weight: 900;
+    font-size: 80%;
   }
   
   .box:before {
@@ -108,6 +112,7 @@ footer{
   
   .box:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    
   }
   
   .box:hover:before {
@@ -141,7 +146,7 @@ footer{
 
 .input-wrapper {
     display: flex;
-
+    
   }
   
   .input-box {
@@ -153,6 +158,7 @@ footer{
     color: #3dc222;
     background-color: transparent;
     transition: border-color 0.3s ease-in-out;
+    
   }
   
   .underline {
@@ -169,4 +175,55 @@ footer{
   
   .input-box:focus + .underline {
     transform: scaleX(1);
+  }
+
+
+
+
+
+  .box1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .box1 :first-child {
+    align-self: center;
+  }
+
+
+
+
+
+
+
+
+  .counter {
+    scale: 1.5;
+      width: 150px;
+      display: inline-flex;
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+      border: solid 1px black;
+      margin-right: 300px
+  }
+  .counter input {
+      width: 50px;
+      border: 0;
+      line-height: 30px;
+      font-size: 20px;
+      text-align: center;
+      background: transparent;
+      color: #000000;
+      appearance: none;
+      outline: 0;
+  }
+  .counter span {
+      display: block;
+      font-size: 25px;
+      padding: 0 10px;
+      cursor: pointer;
+      color: #000000;
+      user-select: none;
   }
