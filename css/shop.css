@@ -43,22 +43,27 @@ body{
 
 .produit{
     display: grid;
+    margin-left: 200px;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 .produit .carte{
     width: 310px;
+    overflow: hidden;
+    width: 310px;
     background-color: #f5f5f5;
     bottom: 0 10px 20px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+
 }
 
 
 .produit .carte img{
+    width: 310px;
     height: 310px;
-    width: auto;
+    object-fit: cover;
     border-radius: 10px 10px 0px 0px;
 }
 .produit .carte .desc{
@@ -81,7 +86,6 @@ body{
 
 .produit .carte .prix{
     padding: 5px 20px;
-    
 }
 
 .produit .carte .achat{
@@ -154,4 +158,26 @@ border: solid 1px black;
     transform: translateY(0);
     opacity: 1;
     transition: 0.5s all ease;
+}
+
+.filters{
+    width: 20px;
+}
+
+.filters .titre{
+    color: #0066CC;
+}
+
+.filters .button{
+
+}
+
+.filters .para{
+
+}
+
+.filters .checkbox{
+    flex-direction: column;
+    display: flex;
+    width: 20px;
 }
