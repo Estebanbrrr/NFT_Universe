@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/article.css">
+    <title>Article</title>
+</head>
+<body>
+
+
+
+
+
+
+
+    <div class="nav">
+        <ul class="navGauche">
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li class="input-wrapper">
+                <input class="input-box" type="text" placeholder="Rechercher">
+                <image><span class="underline"></span></image>
+            </li>
+        </ul>
+        <ul class="navDroite">
+            <li><a href="panier.html">Panier</a></li>
+            <li><a href="login.html">LogIn</a></li>
+        </ul>
+    </div>
+    <div class="body">
+    <h1>La pomme</h1>
+    
+    <div class="box1">
+        
+    <div><img src="https://th.bing.com/th/id/OIP.KXogHNeHoUFZp5Fi_qdQ_QHaHN?pid=ImgDet&rs=1"></div>
+    
+    <h3>Les pommes c'est bon pour la santé !</h3>
+    <script>
+        function increaseCount(a, b) {
+            var input = b.previousElementSibling;
+            var value = parseInt(input.value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            input.value = value;
+          }
+    
+          
+          function decreaseCount(a, b) {
+            var input = b.nextElementSibling;
+            var value = parseInt(input.value, 10);
+            if (value > 1) {
+              value = isNaN(value) ? 0 : value;
+              value--;
+              input.value = value;
+            }
+          }
+        </script>
+    <div>
+        <div class="counter">
+            <span class="down" onClick='decreaseCount(event, this)'>-</span>
+            <input type="text" value="1">
+            <span class="up" onClick='increaseCount(event, this)'>+</span>
+          </div>
+        </div>
+        <div class="box2">
+        <div class="btn-conteiner">
+            <a class="btn-content" href="#">
+              <span class="btn-title">Panier</span>
+              <span class="icon-arrow">
+              </span> 
+            </a>
+          </div>
+          <div class="btn-conteiner">
+            <a class="btn-content" href="#">
+              <span class="btn-title">Achat direct</span>
+              <span class="icon-arrow">
+              </span> 
+            </a>
+          </div>
+        </div>
+
+          </div>
+          
+        
+</div>
+
+
+
+
+
+
+    <footer>
+        <p>Page réalisée par Natan<p>
+    </footer>
+</body>
+
+</html> 
