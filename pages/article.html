@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/article.css">
+    <link rel="stylesheet" type="text/css" href="../styles/article.css">
     <title>Article</title>
 </head>
 <body>
@@ -25,15 +25,17 @@
         </ul>
         <ul class="navDroite">
             <li><a href="panier.html">Panier</a></li>
-            <li><a href="login.html">Log In</a></li>
+            <li><a href="login.html">LogIn</a></li>
         </ul>
     </div>
-
-    <h1>Article</h1>
+    <div class="body">
+    <h1>La pomme</h1>
     
     <div class="box1">
+        
     <div><img src="https://th.bing.com/th/id/OIP.KXogHNeHoUFZp5Fi_qdQ_QHaHN?pid=ImgDet&rs=1"></div>
-
+    
+    <h3>Les pommes c'est bon pour la santé !</h3>
     <script>
         function increaseCount(a, b) {
             var input = b.previousElementSibling;
@@ -61,20 +63,27 @@
             <span class="up" onClick='increaseCount(event, this)'>+</span>
           </div>
         </div>
+        <div class="box2">
+        <div class="btn-conteiner">
+            <a class="btn-content" href="#">
+              <span class="btn-title">Panier</span>
+              <span class="icon-arrow">
+              </span> 
+            </a>
+          </div>
+          <div class="btn-conteiner">
+            <a class="btn-content" href="#">
+              <span class="btn-title">Achat direct</span>
+              <span class="icon-arrow">
+              </span> 
+            </a>
+          </div>
         </div>
-    <button>
-        <div class="boutons">
-        <span class="box">
-            Ajouter au panier
-        </span>
-    </button>
-    <button>
-        <span class="box">
-            Acheter
-        </span>
-    </button>
-</div>
 
+          </div>
+          
+        
+</div>
 
 
 
