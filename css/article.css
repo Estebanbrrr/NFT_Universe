@@ -1,6 +1,6 @@
 .nav {
-    background-color: rgb(5, 6, 45);
-    color: #ffffff;
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: space-between;
     padding: 1.5%;
@@ -11,7 +11,7 @@
     margin: 30px;
     border: 3px solid transparent;
     border-image: initial;
-    border-image-source: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+    border-image-source: black;
     border-image-slice: 1;
     border-image-repeat: stretch;
     border-image-width: 3px;
@@ -53,14 +53,15 @@
   
 img{
   scale: 0.7;
+  border: 2px solid;
 }
 h1{
   margin-left: 30px;
 }
 
 body{
-    color:rgb(255, 255, 255);
-    background-color:black;
+    color:black;
+    background-color:white;
     font-family: "Lucida Console", "Courier New", monospace;
     width: 1100px;
     margin: auto;
@@ -68,18 +69,13 @@ body{
 
 .body{
 
-  background-color:rgb(5, 6, 45);
+  background-color:white;
   margin: 30px;
-border: 3px solid transparent;
-border-image: initial;
-border-image-source: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
-border-image-slice: 1;
-border-image-repeat: stretch;
-border-image-width: 3px;
+border: 3px solid black;
 }
 
 footer{
-    background-color: rgb(5, 6, 45);
+    background-color: black;
     color:rgb(255, 255, 255);
     height: 100px;
     display: flex;
@@ -89,13 +85,7 @@ footer{
     font-size: 20px;
     align-items: center;
     justify-content: center;
-
-    border: 3px solid transparent;
-border-image: initial;
-border-image-source: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
-border-image-slice: 1;
-border-image-width: 3px;
-}
+  }
 
 /* Bouton */
 
@@ -180,13 +170,7 @@ border-image-width: 3px;
       margin: auto;
       align-items: center;
       justify-content: center;
-      border: solid 1px black;
-      border: 1px solid transparent;
-      border-image: initial;
-      border-image-source: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
-      border-image-slice: 1;
-      border-image-repeat: stretch;
-      border-image-width: 1px;
+      border: 2px solid black;
   }
   .counter input {
       width: 50px;
@@ -242,4 +226,11 @@ border-image-width: 3px;
     font-weight: 600;
     font-size: 30px;
     color: var(--color-text);
+  }
+
+
+
+
+  td{
+    text-align: center;
   }
