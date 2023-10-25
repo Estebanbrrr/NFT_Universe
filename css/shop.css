@@ -17,13 +17,6 @@ body{
     color: white;
 }
 
-.rond {
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    border-radius: 50%; /* Utilise le border-radius pour créer un cercle */
-}
-
 
 .nft{
     text-align: left;
@@ -43,7 +36,8 @@ body{
 
 .produit{
     display: grid;
-    margin-left: 200px;
+
+    margin: 100px 0 0 200px;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 .produit .carte{
@@ -161,23 +155,62 @@ border: solid 1px black;
 }
 
 .filters{
-    width: 20px;
+    position: absolute;
+    width: 200px;
+    border: 3px solid black;
+    border-radius: 3px;
 }
 
 .filters .titre{
-    color: #0066CC;
+    color: black;
 }
 
 .filters .button{
 
 }
 
-.filters .para{
-
+.filters .h4{
+   
 }
 
-.filters .checkbox{
-    flex-direction: column;
-    display: flex;
+input[type="checkbox"] {
+    margin: 5px; 
+    vertical-align: middle; 
+    cursor: pointer;
+}
+.rond{
+    cursor: pointer;
+}
+
+.color{
+    position: absolute;
+    top: 100%;
+    border: 3px solid black;
+    width: 200px;
+}
+
+.color .couleur{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 150px;
+    border: 3px solid black;
+}
+
+.color h4{
+    color: black;
+}
+
+.rond {
     width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%; 
+}
+
+
+.trie{
+    position: absolute;
+    left: 85%;
+    border: 3px solid black;
 }
