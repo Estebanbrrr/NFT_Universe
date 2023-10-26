@@ -127,15 +127,15 @@
 
     .voir_plus {
         text-align: center;
+        position: relative;
+        top: 100%;
+        left: 115%;
     }
 
 
     .button_read {
-        position: absolute;
-        left: 55%;
-        bottom: -70%;
-        text-align: center;
         
+        text-align: center;
         transform: translateX(-50%);
         font-weight: 0;
         font-size: 14px;
