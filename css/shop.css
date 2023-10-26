@@ -133,11 +133,8 @@
     }
 
 
-    .button_read {
-        
+    .button_read {   
         text-align: center;
-        transform: translateX(-50%);
-        font-weight: 0;
         font-size: 14px;
         color: #fff;
         background-color: #0066CC;
@@ -145,7 +142,6 @@
         border: solid #000000 1px;
         box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
         cursor: pointer;
-    
     }
 
     .button_read:hover{
