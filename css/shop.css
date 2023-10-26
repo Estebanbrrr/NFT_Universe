@@ -4,6 +4,7 @@
     body{
         margin: 0%;
         font-family: 'Courier New', Courier, monospace;
+        height: auto;
     }
 
     .navbar{
@@ -125,14 +126,15 @@
     }
 
     .voir_plus {
-        position: absolute;
-        left: 55%;
-        bottom: -120%;
         text-align: center;
     }
 
 
     .button_read {
+        position: absolute;
+        left: 55%;
+        bottom: -70%;
+        text-align: center;
         
         transform: translateX(-50%);
         font-weight: 0;
@@ -291,6 +293,8 @@
 body{
     margin: 0%;
     width: auto;
+    font-family: 'Courier New', Courier, monospace;
+    height: auto;
 }
 
 .navbar{
@@ -423,7 +427,7 @@ border: solid 1px black;
 .button_read {
     position: absolute;
     left: 50%;
-    bottom: -332%;
+    bottom: -343%;
     transform: translateX(-50%);
     font-weight: 0;
     font-size: 14px;
