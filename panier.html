@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Page Panier </title>
     <link rel="stylesheet" href="css/panier.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
 
     <header>
         <div class="logo">
-            <a href="index.html"><img src="img/logo.png"></a>
+            <a href="index.html"><img src="images/logo.png"></a>
         </div>
         <input type="checkbox" id="nav_check" hidden>
         <nav>
             <ul>
                 <li>
+                    <input type="text" placeholder="Rechercher...">
+                </li>
+                <li>
                     <a href="index.html">Accueil</a>
                 </li>
                 <li>
-                    <a href="boutique.html">Boutique</a>
+                    <a href="achat.html">Achat</a>
                 </li>
                 <li>
                     <a href="produit.html">Produit</a>
                 </li>
                 <li>
-                    <a href="panier.html" class="active">Panier</a>
+                    <a href="panier.html"  class="active">Panier</a>
                 </li>
                 <li>
                     <a href="inscription.html">Inscription</a>
@@ -43,6 +45,95 @@
         </label>
     </header>
 
+    <br><br><br>
+
+
+    <section class="section-panier">
+
+        <div class="container">
+            <div class="container-div panierTaille">
+                <h1 class="titre"> Panier </h1>
+                
+
+                <div class="card-section">
+                    <div class="card container-div2">
+                        <img class="tailleImg" src="images/singe1.jpeg">
+                    </div>
+                    <div>
+                        <h2> Singe </h2> <br>
+                        <div class="tailleTexte">
+                            <p> Taille: Grand </p>
+                            <p> Quantite: 1 </p>
+                            <p><strong> 1.2 ETH </strong></p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="card-section">
+                    <div class="card container-div2">
+                        <img class="tailleImg" src="images/singe3.jpeg">
+                    </div>
+                    <div>
+                        <h2> CryptoPunks </h2> <br>
+                        <div class="tailleTexte">
+                            <p> Taille: Petit </p>
+                            <p> Quantité: 3 </p>
+                            <p><strong> 1.5 ETH </strong></p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="container-div paiementTaille">
+                <h3 class="titre"> Paiement </h3>
+                <input type="text" placeholder="Entrer votre code de réduction ici...">
+
+                <div class="texteCote">
+                    <span> Réduction </span>
+                    <span> -0.5 ETH </span>
+                </div>
+                <br>
+                <div class="texteCote">
+                    <span> Prix NFT </span>
+                    <span> 2.7 ETH </span>
+                </div>
+                <hr>
+                <br>
+                <div class="texteCote">
+                    <span> Total </span>
+                    <span> 2.2 ETH </span>
+                </div>
+
+                <div class="btnAchat">
+                    <button class="btnAchat-continue"> Continuer à payer </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+
+    <div class="bottom-left">
+        <h2> Autre Information </h2>
+        <hr></hr>
+        <div class="info-details">
+            <p><strong> Notre Police </strong></p>
+            <br>
+            <p> Ceci est notre police utilisé dans notre page  </p>
+            <hr></hr>
+            <p> Nos Styles </p>
+            <hr></hr>
+            <p> Nos Options </p>
+            <hr></hr>
+        </div>
+    </div>
+
 
     <br><br><br>
 
@@ -53,28 +144,26 @@
                 <div class="footer-col">
                     <h4> Inscrivez-vous gratuitement </h4>
                     <ul>
-                        <li><a href="#"> insinsisn </a></li>
-                        <li><a href="#"> insinsisn </a></li>
-                        <li><a href="#"> insinsisn </a></li>
-                        <li><a href="#"> insinsisn </a></li>
+                        <li><a href="#"> Inscription </a></li>
+                        <li><a href="#"> Connexion </a></li>
+                        <li><a href="#"> Vos Donnée Protégé </a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4> Notre boutique en ligne de NFT </h4>
                     <ul>
-                        <li><a href="#"> boutboutbout </a></li>
-                        <li><a href="#"> boutboutbout </a></li>
-                        <li><a href="#"> boutboutbout </a></li>
+                        <li><a href="#"> Boutique </a></li>
+                        <li><a href="#"> Produit </a></li>
+                        <li><a href="#"> Securite </a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4> Besoin d'aide ? </h4>
                     <ul>
-                        <li><a href="#"> aideaideaide </a></li>
-                        <li><a href="#"> aideaideaide </a></li>
-                        <li><a href="#"> aideaideaide </a></li>
-                        <li><a href="#"> aideaideaide </a></li>
-                        <li><a href="#"> aideaideaide </a></li>
+                        <li><a href="#"> A propos </a></li>
+                        <li><a href="#"> Sponsors </a></li>
+                        <li><a href="#"> Avis Client </a></li>
+                        <li><a href="#"> Condition d'utilisation </a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
