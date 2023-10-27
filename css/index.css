@@ -6,6 +6,7 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* NAV-BAR */
 img {
     width: 100%;
@@ -40,6 +41,17 @@ nav ul li a {
     transition: 0.2s;
     border-radius: 30px;
 }
+nav ul li input {
+    color: #fefefe;
+    background: #404040;
+    display: block;
+    margin: 0 2px;
+    font-weight: 600;
+    padding: 8px 18px;
+    transition: 0.2s;
+    border-radius: 100px;
+
+}
 nav ul li a:hover {
     background: #675cff;
 }
@@ -64,7 +76,6 @@ nav ul li a.active {
     margin: 6px 0;
     background: #fefefe;
 }
-
 @media only screen and (max-width: 1100px) {
     header {
         width: 90%;
