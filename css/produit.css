@@ -6,9 +6,6 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
   }
-  body {
-    background-color: #212526;
-  }
   
   /* NAV-BAR */
   img {
@@ -69,6 +66,8 @@
     background: #fefefe;
   }
   
+/* Résponsivité de la barre de navigation */
+
   @media only screen and (max-width: 1100px) {
     header {
         width: 90%;
@@ -108,40 +107,59 @@
     .hamburger {
         display: block;
     }
+
+/* Le NFT */
+
   }
   img{
     bottom: 0 10px 20px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    margin-right: 30px;
   }
   .nftimg {
     position: relative;
     scale:1;
-    width: 40%;
-    margin-left: 10%;
+
+    margin-left: 25%;
     margin-top: 3%;
-    min-width: 200PX;
+    min-width: 200px;
   }
+
+  /* Responsivité du corps */
 
   @media (max-width: 768px) {
     .img {
         width: 100%;
-        margin: 0; /* Occupe toute la largeur de l'écran en dessous de 768px */
+        margin: 0;
+        margin: auto;
     }
     .box1 {
-        display: flex;
+        display: block;
         align-items: center;
         flex-direction: column;
       }
-      .body{
-        display: block;
-        position: relative;
-        margin-left: 0px;
-        margin-right: 0px;
-        width: 700px;
-       
-      }
+      body{
+        color:black;
+        background-color:white;
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-family: 'Poppins', sans-serif;
+        width:100%;
+        
+        }
+    
+    .body{
+        margin: auto;
+        align-self: center;
+      background-color:white;
+
+      border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
       .texte{
+        position: static;
         width: 80%;
         text-align: justify;
         margin-top: 50%;
@@ -150,7 +168,10 @@
       }
 
 }
-  
+
+  /* Loupe quand on passe sur l'image du NFT*/
+
+
   .loupe {
     width: 200px;
     height: 200px;
@@ -165,10 +186,10 @@
   }
   
   
-  
+  /* Parametres de titres, corps et texte */
   
   h1{
-    margin-left: 10%;
+    margin-left: 25%;
     margin-top: 3%;
   }
   h3{
@@ -189,16 +210,16 @@
       background-color:white;
       font-family: "Lucida Console", "Courier New", monospace;
       font-family: 'Poppins', sans-serif;
+      width: 100%;
       
       
       }
   
   .body{
-  margin: auto;
-
-  align-self: center;
+      margin: auto;
+      align-self: center;
     background-color:white;
-    width: 50%;
+    width:;
     border-radius: 10px;
   border: 3px solid white;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -206,10 +227,10 @@
   
   
   
-  /* Bouton */
   
   
   
+  /* Les différentes box du corps */
   
   
   
@@ -230,17 +251,13 @@
       display: flex;
       margin-bottom: 4px;
     }
-  
-  
-  
-  
   label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
   }
   
-  /* Style pour la liste déroulante */
+  /* Liste déroulante */
   select {
     width: 200px;
     display: flex;
@@ -251,14 +268,10 @@
     width: 30%;
     height: 10%;
   }
-  
-  /* Style pour les options */
   select option {
     font-size: 16px;
     padding: 5px;
   }
-  
-  /* Style pour le bouton de validation (facultatif) */
   input[type="submit"] {
     background-color: #007BFF;
     color: #fff;
@@ -268,14 +281,12 @@
     font-size: 16px;
     cursor: pointer;
   }
-  
-  /* Style pour le bouton de validation au survol (facultatif) */
   input[type="submit"]:hover {
     background-color: #0056b3;
   }
   
   
-  
+  /* Bouton Quantité d'article */
   
     .counter {
       position: relative;
@@ -286,7 +297,6 @@
         justify-content: center;
         border: 0.5px solid #ccc;
         border-radius: 5px;
-    
         
     }
     .counter input {
@@ -299,7 +309,6 @@
         color: black;
         appearance: none;
         outline: 0;
-        
     }
     .counter span {
         display: block;
@@ -308,7 +317,6 @@
         cursor: pointer;
         color:black;
         user-select: none;
-        
     }
     .compteur{
       position: relative;
@@ -318,7 +326,7 @@
     }
   
   
-  
+  /* Bouton Panier et Achat direct*/
   
   
   
@@ -327,12 +335,11 @@
       --color-text: black;
       border: 1px solid black;
       justify-content: space-evenly;
-  margin-right: 5% ;
-  margin-bottom: 30px;
-  background-color: #675cff;
-  border: 0.5px solid black;
-        border-radius: 5px;
-  
+      margin-right: 5% ;
+      margin-bottom: 30px;
+      background-color: #675cff;
+      border: 0.5px solid black;
+      border-radius: 5px;
       margin-top: 30px;
       width: 30%;
       height: 35px;
@@ -345,13 +352,13 @@
       color: white;
       text-decoration: none;
       font-family: 'Poppins', sans-serif;
-  
       font-weight: 600;
       font-size: 15px;
       
     }
   
-  
+  /* La case qui permet d'entrer un prix dans le tableau */
+
   input[type="number"] {
     border: 1px solid #ccc;
   }
@@ -379,7 +386,7 @@
   
   
   
-  
+  /* Le tableau */
   
   
   
@@ -423,7 +430,7 @@
       text-transform: uppercase;
     }
     
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 724px) {
       table {
         border: 0;
       }
@@ -476,6 +483,9 @@
   
   
     /* FOOTER */
+
+
+
   .container {
     
     max-width: 1170px;
@@ -548,6 +558,8 @@
     color: #24262b;
     background-color: #675cff;
   }
+
+  /* Responsivité du footer */
   
   @media (max-width: 767px) {
     .footer-col {
