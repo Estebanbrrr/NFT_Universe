@@ -95,36 +95,8 @@ body {
   background-color: #ececec;
 }
 
-.back-button {
-	position: relative;
-  text-indent: -15px;
-  padding: 5px 0 5px 10px;
-  width: 350px;
-	overflow: auto;
-margin-bottom: 3px;
 
-
-}
-.label {
-	display: block;
-  width: auto;
-  line-height: 40px;
-  border-radius: 10px;
-  margin-bottom: ;
-  font-size: 12px;
-  font-weight: 900;
-  font-family: helvetica, sans-serif;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-
-  background-color: rgba(239,239,239,1);
-  border: 1px solid #bcbcbc;
-  border-left: 0;
-  color: #888; 
-  text-shadow: 0 1px 0 rgba(255,255,255, 0.8);
-  
-}
-.label:hover {
-  color: hsl(210, 100%, 40%); 
+.contenaire{
+	position: absolute;
+	left: 36%;
 }
