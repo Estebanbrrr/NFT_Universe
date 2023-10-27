@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Page Article </title>
+    <link rel="stylesheet" href="css/produit.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <script src="produit.js"> </script>
+
+
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png"></a>
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="boutique.html">Boutique</a>
+                </li>
+                <li>
+                    <a href="produit.html">Produit</a>
+                </li>
+                <li>
+                    <a href="panier.html" class="active">Panier</a>
+                </li>
+                <li>
+                    <a href="inscription.html">Inscription</a>
+                </li>
+                <li>
+                    <a href="connexion.html">Connexion</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+<body>
+
+     
+
+
+
+    <div class="body">
+    <h1>Singe</h1>
+    
+    <div class="box1">
+        
+    <div class="nftimg"><img id="image" src="img/nft5.jpeg"></div>
+      <div class="loupe" id="loupe"></div>
+      <script>  const image = document.getElementById('image');
+        const loupe = document.getElementById('loupe');
+        const imageContainer = document.querySelector('.nftimg');
+        const offset = 10;
+        
+        imageContainer.addEventListener('mouseenter', () => {
+            loupe.style.display = 'block';
+        });
+        
+        imageContainer.addEventListener('mousemove', (e) => {
+            const rect = imageContainer.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const bgPosX = -x * 2 + 'px';
+            const bgPosY = -y * 2 + 'px';
+        
+            loupe.style.backgroundImage = 'url("' + image.src + '")';
+            loupe.style.backgroundPosition = bgPosX + ' ' + bgPosY;
+            loupe.style.left = x - loupe.offsetWidth / 2 + 'px';
+            loupe.style.top = y - loupe.offsetHeight / 2 + 'px';
+        });
+        
+        imageContainer.addEventListener('mouseleave', () => {
+            loupe.style.display = 'none';
+        });</script>
+    <div class="contenu">
+      <div class="texte">
+      <h3>Lorem ipsum dolor sit amet.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel sapien sit amet eros ultrices suscipit id at lacus. Cras vitae felis non magna accumsan eleifend. Morbi vulputate, orci ac auctor ultricies, velit leo auctor nibh, et hendrerit nisl quam a nisl. Maecenas dictum libero eu velit placerat imperdiet.</p>
+    </div>
+    <script>
+
+      </script>
+
+            <div class="box3">
+              <label for="taille"></label>
+              <select id="taille" name="taille">
+                  <option value="petit">Petit</option>
+                  <option value="moyen">Moyen</option>
+                  <option value="grand">Grand</option>
+                  <option value="très-grand">Très Grand</option>
+              </select>
+      
+            
+  <div class="compteur">
+      <div class="counter">
+        
+          <span class="down" onClick='decreaseCount(event, this)'>-</span>
+          <input type="text" value="1">
+          <span class="up" onClick='increaseCount(event, this)'>+</span>
+        </div>
+      </div>
+</div>
+              <div class="box2">
+            <div class="btn-conteiner">
+                <a class="btn-content" href="#">
+                  <span class="btn-title">Panier</span>
+                </a>
+              </div>
+              <div class="btn-conteiner">
+                <a class="btn-content" href="#">
+                  <span class="btn-title">Achat direct</span>
+                </a>
+              </div>
+            </div>
+    </div>
+  </div>
+  <table>
+    <caption>Achats précedents</caption>
+    <thead>
+      <tr>
+        <th scope="col">Prix d'achat</th>
+        <th scope="col">Date</th>
+        <th scope="col">Valorisation</th>
+        <th scope="col">Détenteur</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Account"><input type="number" id="numberInput" name="numberInput" placeholder="Entrer un prix" required></td>
+
+        <td data-label="Due Date">Aujourd'hui</td>
+        <td data-label="Amount">%</td>
+        <td data-label="Period">Vous</td>
+      </tr>
+      <tr>
+        <td data-label="Account">3.8 ETH</td>
+        <td data-label="Due Date">Il y a 2 jours</td>
+        <td data-label="Amount">+23%</td>
+        <td data-label="Period">Esteban</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Account">2.4 ETH</td>
+        <td data-label="Due Date">30/09/2023</td>
+        <td data-label="Amount">+56%</td>
+        <td data-label="Period">Semih</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Account">1.12 ETH</td>
+        <td data-label="Due Date">14/09/2023</td>
+        <td data-label="Amount">+12%</td>
+        <td data-label="Period">Natan</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Acount">0.75 ETH</td>
+        <td data-label="Due Date">03/09/2023</td>
+        <td data-label="Amount">+10%</td>
+        <td data-label="Period">Michel</td>
+      </tr>
+    </tbody>
+  </table>
+    </div>
+
+
+
+
+
+
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4> Inscrivez-vous gratuitement </h4>
+              <ul>
+                  <li><a href="#"> insinsisn </a></li>
+                  <li><a href="#"> insinsisn </a></li>
+                  <li><a href="#"> insinsisn </a></li>
+                  <li><a href="#"> insinsisn </a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4> Notre boutique en ligne de NFT </h4>
+              <ul>
+                  <li><a href="#"> boutboutbout </a></li>
+                  <li><a href="#"> boutboutbout </a></li>
+                  <li><a href="#"> boutboutbout </a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4> Besoin d'aide ? </h4>
+              <ul>
+                  <li><a href="#"> aideaideaide </a></li>
+                  <li><a href="#"> aideaideaide </a></li>
+                  <li><a href="#"> aideaideaide </a></li>
+                  <li><a href="#"> aideaideaide </a></li>
+                  <li><a href="#"> aideaideaide </a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4> Rejoignez-nous sur les réseaux </h4>
+              <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</footer>
+</body>
+
+</html> 
