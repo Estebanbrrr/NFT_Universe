@@ -76,6 +76,8 @@ nav ul li a.active {
     margin: 6px 0;
     background: #fefefe;
 }
+
+/* Responsivite du nav-bar */
 @media only screen and (max-width: 1100px) {
     header {
         width: 90%;
@@ -119,6 +121,7 @@ nav ul li a.active {
 
 
 /* BODY */
+/* Responsivite du body */
 @media (min-width: 769px){
     .section-panier{
         padding: 40px 5%;
@@ -235,7 +238,7 @@ nav ul li a.active {
     }
 }
 
-
+/* Responsivite du body */
 @media (max-width: 769px){
     .section-panier{
         padding: 40px 5%;
@@ -352,6 +355,7 @@ nav ul li a.active {
     }
 }
 
+/* Responsivite du body */
 @media (max-width: 1000px) {
     .container {
         flex-direction: column;
@@ -443,9 +447,11 @@ nav ul li a.active {
     transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover {
-    color: #fefefe;
+    color: #24262b;
     background-color: #675cff;
 }
+
+/* Responsivité du footer */
 
 @media (max-width: 767px) {
     .footer-col {
